@@ -2,13 +2,11 @@ from sklearn.neighbors import NearestNeighbors
 import numpy as np
 
 def recommend_song(user_preferences, song_data):
-    # Assume song_data is a matrix of song features
     model = NearestNeighbors(n_neighbors=5)
     model.fit(song_data)
     distances, indices = model.kneighbors([user_preferences])
     return indices
 
-# Define the song_data matrix
 song_data = np.array([
     [120, 1, 0, 0.8],  # Song 1
     [90, 2, 1, 0.6],   # Song 2
@@ -18,8 +16,7 @@ song_data = np.array([
 ])
 
 def get_mean_energy():
-    mean_energy = np.mean(song_data[:, 3])  # Extracting the energy column (index 3)
-    return mean_energy
+    mean_energy = np.mean(song_data[:, 3])
 
 def get_highest_energy_song():
     highest_energy_index = np.argmax(song_data[:, 3])

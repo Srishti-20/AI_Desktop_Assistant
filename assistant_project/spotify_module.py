@@ -8,7 +8,6 @@ import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 import configparser
 
-# Read the credentials from the file
 config = configparser.ConfigParser()
 config.read('cred.txt')
 
