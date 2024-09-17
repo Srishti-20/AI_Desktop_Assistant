@@ -25,7 +25,7 @@ This project involves developing an AI-powered desktop assistant using Python. T
 
    ```bash
    git clone https://github.com/Srishti-20/Desktop_Assistant.git
-   cd your-repository
+   cd assistant_project
 
 2. **Create and Activate Virtual Environment**
 ```bash
