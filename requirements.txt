@@ -1,0 +1,12 @@
+Flask
+spotipy
+SpeechRecognition
+transformers
+spacy
+pvporcupine
+pyaudio
+opencv-python
+scikit-learn
+numpy
+configparser
+requests
